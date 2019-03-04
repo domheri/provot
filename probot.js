@@ -4,7 +4,7 @@ const fs = require("fs");
 const dateFormat = require('dateformat');
 const client = new Discord.Client(); 
 const Canvas = require("canvas"); //npm i canvas
-const prefix = "YOUR Prefix Here" // برفكس مثلا -
+const prefix = '#';
 let profile = JSON.parse(fs.readFileSync("profile.json", "utf8"))
 
 client.on('ready', () => {
@@ -416,7 +416,7 @@ client.on('message', message => {
   let embed = new Discord.RichEmbed()
 .setAuthor(message.author.username)
 .setColor("#9B59B6")
-.addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/67m92V**")
+.addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/NgdvJy3**")
   
   
 message.channel.sendEmbed(embed);
@@ -729,12 +729,12 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
             let Image = Canvas.Image,
             canvas = new Canvas(300, 300),
             ctx = canvas.getContext('2d');
-            fs.readFile("Super.png", function (err, Background) { //امتداد الصورة
+            fs.readFile("Super.png", function (err, Background) { 
             if (err) return console.log(err);
             let BG = Canvas.Image;
             let ground = new Image;
             ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 300, 300); // حجم الصورة
+            ctx.drawImage(ground, 0, 0, 300, 300); 
  
 })
  
@@ -747,53 +747,53 @@ if (!profile[getvalueof.id]) profile[getvalueof.id] = {points: 0,reps: "NOT YET"
                         if (err) return console.log(err);
  
                         //ur name
-                        ctx.font = 'bold 16px kathen'; // حجم الخط و نوعه
-                        ctx.fontSize = '40px'; // عرض الخط
-                        ctx.fillStyle = "#000000"; // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${getvalueof.username}`, 153, 173) // احداثيات اسمك
+                        ctx.font = 'bold 16px kathen'; 
+                        ctx.fontSize = '40px'; 
+                        ctx.fillStyle = "#000000"; 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${getvalueof.username}`, 153, 173) 
  
                         //ur name
-                        ctx.font = 'bold 16px kathen'; // حجم الخط و نوعه
-                        ctx.fontSize = '40px'; // عرض الخط
-                        ctx.fillStyle = "#f1f1f1"; // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${getvalueof.username}`, 151, 171) // احداثيات اسمك
+                        ctx.font = 'bold 16px kathen'; 
+                        ctx.fontSize = '40px'; 
+                        ctx.fillStyle = "#f1f1f1"; 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${getvalueof.username}`, 151, 171) 
  
                         //credit
-                        ctx.font = "bold 12px kathen" // نوع الخط وحجمه
-                        ctx.fontSize = '10px'; // عرض الخط
-                        ctx.fillStyle = "#f1f1f1" // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`$${profile[getvalueof.id].credits}`, 81, 159) // احداثيات المصاري
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '10px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`$${profile[getvalueof.id].credits}`, 81, 159) 
  
                         //poits
-                        ctx.font = "bold 12px kathen" // ن
-                        ctx.fontSize = '10px'; // عرض الخطوع الخط وحجمه
-                        ctx.fillStyle = "#f1f1f1" // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${profile[getvalueof.id].points}`, 221, 159) // احداثيات النقاط
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '10px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].points}`, 221, 159) 
  
                         //Level
-                        ctx.font = "bold 27px kathen" // نوع الخط و حجمه
-                        ctx.fontSize = '10px'; // عرض الخط
-                        ctx.fillStyle = "#f1f1f1" // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${profile[getvalueof.id].level}`, 221, 118) // احداثيات اللفل
+                        ctx.font = "bold 27px kathen" 
+                        ctx.fontSize = '10px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].level}`, 221, 118) 
  
                          //info
-                        ctx.font = "bold 12px kathen" // ن
-                        ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
-                        ctx.fillStyle = "#000000" // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 199) // احداثيات النقاط
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#000000" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 199) 
  
                         //info
-                        ctx.font = "bold 12px kathen" // ن
-                        ctx.fontSize = '15px'; // عرض الخطوع الخط وحجمه
-                        ctx.fillStyle = "#f1f1f1" // لون الخط
-                        ctx.textAlign = "center"; // محاذا ة النص
-                        ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 197) // احداثيات النقاط
+                        ctx.font = "bold 12px kathen" 
+                        ctx.fontSize = '15px'; 
+                        ctx.fillStyle = "#f1f1f1" 
+                        ctx.textAlign = "center"; 
+                        ctx.fillText(`${profile[getvalueof.id].tite}`, 150, 197) 
  
                         // REP
                         ctx.font = "bold 26px  kathen";
